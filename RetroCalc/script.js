@@ -11,7 +11,7 @@ buttons.forEach(button => {
         const value = button.textContent;
 
 
-        // AC
+        
         if(value === "AC"){
 
             currentInput = "";
@@ -20,7 +20,7 @@ buttons.forEach(button => {
         }
 
 
-        // DELETE
+        
         else if(value === "DEL"){
 
             currentInput = currentInput.slice(0,-1);
@@ -29,7 +29,6 @@ buttons.forEach(button => {
         }
 
 
-        // SQUARE ROOT
         else if(value === "√"){
 
             if(currentInput){
@@ -43,7 +42,7 @@ buttons.forEach(button => {
         }
 
 
-        // PERCENT
+       
         else if(value === "%"){
 
             currentInput = (Number(currentInput)/100).toString();
@@ -53,7 +52,7 @@ buttons.forEach(button => {
         }
 
 
-        // PLUS MINUS
+        
         else if(value === "±"){
 
             currentInput = (Number(currentInput)*-1).toString();
@@ -63,7 +62,7 @@ buttons.forEach(button => {
         }
 
 
-        // EQUAL
+        
         else if(value === "="){
 
             try{
@@ -89,7 +88,7 @@ buttons.forEach(button => {
         }
 
 
-        // ON BUTTON
+        
         else if(value==="ON"){
 
             display.textContent="0";
@@ -98,7 +97,7 @@ buttons.forEach(button => {
         }
 
 
-        // MEMORY BUTTONS
+        
         else if(
             value==="MC" ||
             value==="MR" ||
